@@ -561,7 +561,7 @@ img {
   }
 }
 
-/* HOMECAROLS */
+/* HOME CAROLS */
 .homeCarols {
   padding: 5rem 0;
   margin-bottom: 10rem;
@@ -577,7 +577,7 @@ img {
 .homeCarols__details small {
   font-size: 1.3rem;
 }
-.homeCarols__details h2 {
+.homeCarols__details h1 {
   font-family: var(--font-secondary);
   font-size: 5rem;
   margin-bottom: 3rem;
@@ -641,6 +641,9 @@ img {
   color: var(--clr-primary);
   font-size: 1.2rem;
 }
+.homeCarols__cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* HOME CAROLS MOBILE */
 @media screen and (max-width: 520px) {
@@ -669,59 +672,73 @@ img {
   }
 }
 
-/* DECORATIONS */
-.homeDecoration {
+* HOME DECORATIONS */
+.homeDecorations {
   padding-top: 5rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
-.homeDecoration__wrapper {
+.homeDecorations__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 5rem;
 }
-.homeDecoration__left {
-  border-right: 10px solid rgb(18, 17, 17, 0.1);
+.homeDecorations__left {
+  border-right: 1px solid rgba(18, 17, 17, 0.1);
   padding-right: 5rem;
 }
-.homeDecoration__left small {
+.homeDecorations__left small {
   color: var(--clr-secondary);
   font-size: 1.4rem;
   font-weight: 500;
 }
-.homeDecoration__small h3 {
-  font-size: 8rem;
-  font-family: var(--clr-secondary);
+.homeDecorations__left h2 {
+  font-size: 3rem;
+  font-family: var(--font-secondary);
   color: var(--clr-primary);
-  line-height: 5rem;
-  max-width: 30rem;
+  line-height: 3rem;
+  max-width: 70rem;
   padding: 1.3rem 0;
 }
-.homeDecoration__right h4 {
-  font-size: 2rem;
-  margin-bottom: 4rem;
+.homeDecorations__cards {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.homeDecorations__right {
+  margin-top: 0rem;
+}
+.homeDecorations__right h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   color: var(--clr-primary);
 }
+.homeDecorations__right h4 {
+  font-size: 1.7rem;
+  font-family: var(--font-secondary);
+  margin-bottom: 0.5rem;
+  color: var(--clr-dark);
+}
 
-/* HOME DECORATION MOBILE */
+/* HOME DECORS MOBILE */
 @media screen and (max-width: 520px) {
-  .homeDecoration__left h2 {
-    font-size: 3rem;
-    line-height: 4rem;
+ .homeDecors__left h2 {
+   font-size: 3rem;
+   line-height: 3rem;
   }
-  .homeDecoration__cards {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+  .homeDecors__cards {
+   grid-template-columns: 1fr;
+   gap: 3rem;
   }
-  .homeDecoration__wrapper {
-    grid-template-columns: 1fr;
-    gap: unset;
+  .homeDecors__wrapper {
+   grid-template-columns: 1fr;
+   gap: unset;
   }
-  .homeDecoration__left {
+  .homeDecors__left {
     border-right: unset;
     padding-right: unset;
   }
-  .homeDecoration__right,
-  .homeDecoration {
+  .homeDecors {
     margin-top: unset;
   }
 }
