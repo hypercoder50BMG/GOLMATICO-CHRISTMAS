@@ -132,7 +132,7 @@ img {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: var(--clr-light);
 }
-.header__wrapper {
+.header__img {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -672,74 +672,65 @@ img {
   }
 }
 
-* HOME DECORATIONS */
-.homeDecorations {
-  padding-top: 5rem;
-  margin-top: 10rem;
+/* DECORATIONS */
+.decorBanner {
+  padding-top: 0rem;
+  background-color: var(--clr-light);
+  margin-bottom: 10rem;
 }
-.homeDecorations__wrapper {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 5rem;
+.decorBanner__wrapper h1 {
+  font-family: var(--font-secondary);
+  color: var(--clr-primary);
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 0rem;
 }
-.homeDecorations__left {
-  border-right: 1px solid rgba(18, 17, 17, 0.1);
-  padding-right: 5rem;
-}
-.homeDecorations__left small {
+.decorBanner__wrapper h2 {
+  font-family: var(--font-secondary);
   color: var(--clr-secondary);
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-style: italic;
 }
-.homeDecorations__left h2 {
-  font-size: 3rem;
-  font-family: var(--font-secondary);
-  color: var(--clr-primary);
-  line-height: 3rem;
-  max-width: 70rem;
-  padding: 1.3rem 0;
+.decorBanner__wrapper {
+  max-width: 100rem;
+  color: var(--clr-light);
+  margin: 0 auto;
+  text-align: center;
 }
-.homeDecorations__cards {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+.decorBanner img {
+  margin: 5rem 0;
+  width: 50%;
 }
-.homeDecorations__right {
-  margin-top: 0rem;
+.card__wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 5rem;
+ margin-bottom: 5rem;
 }
-.homeDecorations__right h3 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--clr-primary);
-}
-.homeDecorations__right h4 {
-  font-size: 1.7rem;
-  font-family: var(--font-secondary);
-  margin-bottom: 0.5rem;
-  color: var(--clr-dark);
+.cards img {
+  border-bottom: 4px solid var(--clr-secondary);
 }
 
-/* HOME DECORS MOBILE */
-@media screen and (max-width: 520px) {
- .homeDecors__left h2 {
-   font-size: 3rem;
-   line-height: 3rem;
+/* DECOR - MOBILE */
+@media screen and (max-width:520px) {
+  .decorBanner img {
+    margin-top: 10rem;
+    width: 100%
   }
-  .homeDecors__cards {
-   grid-template-columns: 1fr;
-   gap: 3rem;
+  .decorBanner__wrapper h1 {
+  font-size: 5rem;
   }
-  .homeDecors__wrapper {
-   grid-template-columns: 1fr;
-   gap: unset;
+  .decorBanner__wrapper h2 {
+    font-size: 2rem;
   }
-  .homeDecors__left {
-    border-right: unset;
-    padding-right: unset;
+  .card__wrapper {
+    grid-template-columns: 1fr;
+    gap: unset;
   }
-  .homeDecors {
-    margin-top: unset;
+  .card__wrapper p {
+   margin-bottom: 5rem;
   }
 }
 
@@ -969,17 +960,12 @@ img {
   }
 }
 
-/* TRADITION BANNER */
+/* TRADITION */
 .traditionBanner {
-  padding-top: 5rem;
-  margin-top: 10rem;
+  padding-top: 0rem;
+  background-color: var(--clr-light);
+  margin-bottom: 10rem;
 }
-.traditionBanner__wrapper {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 5rem;
-}
-
 .traditionBanner__wrapper h1 {
   font-family: var(--font-primary);
   color: var(--clr-primary);
@@ -995,48 +981,53 @@ img {
   margin-bottom: 5rem;
   font-style: italic;
 }
-.traditionBanner__left {
-  border-right: 1px solid rgba(18, 17, 17, 0.1);
-  padding-right: 5rem;
+.traditionBanner__wrapper {
+  max-width: 100rem;
+  color: var(--clr-light);
+  margin: 0 auto;
+  text-align: center;
 }
-.traditionBanner__left small {
-  color: var(--clr-secondary);
-  font-size: 1.4rem;
-  font-weight: 500;
+.traditionBanner img {
+  margin: 5rem 0;
+  width: 50%;
 }
-.traditionBanner__left h2 {
-  font-size: 5rem;
-  font-family: var(--font-secondary);
-  color: var(--clr-primary);
-  line-height: 5rem;
-  max-width: 50rem;
-  padding: 1.3rem 0;
-}
-.traditionBanner__cards {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-.traditionBanner__right {
-  margin-top: 70rem;
-}
-.traditionBanner__right h4 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--clr-primary);
+.card__wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 5rem;
+ margin-bottom: 5rem;
 }
 
-/* TRADITION BANNER */
-@media screen and (max-width: 520px) {
-  .homeTradition img {
+/* TRADITION - MOBILE */
+@media screen and (max-width:520px) {
+  .traditionBanner img {
     margin-top: 10rem;
-    width: 100%;
+    width: 100%
   }
-  .homeTradition__wrapper h1 {
-    font-size: 4rem;
+  .traditionBanner__wrapper h1 {
+  font-size: 4rem;
   }
-  .homeTradition__wrapper h2 {
+  .traditionBanner__wrapper h2 {
+    font-size: 2rem;
+  }
+   .card__wrapper {
+    grid-template-columns: 1fr;
+    gap: unset;
+  }
+   .card__wrapper p {
+   margin-bottom: 5rem;
+  }
+}
+/* FOODS & DRINKS - MOBILE */
+@media screen and (max-width:520px) {
+  .traditionBanner img {
+    margin-top: 10rem;
+    width: 100%
+  }
+  .traditionBanner__wrapper h1 {
+  font-size: 4rem;
+  }
+  .traditionBanner__wrapper h2 {
     font-size: 2rem;
   }
   .card__wrapper {
@@ -1044,28 +1035,116 @@ img {
     gap: unset;
   }
   .card__wrapper p {
-    margin-bottom: 5rem;
+   margin-bottom: 5rem;
   }
 }
-/* CAROLS BANNER */
-.carolsBanner {
-  padding-top: 5rem;
-  margin-top: 10rem;
+/* CAROLS */
+.foodanddrinksBanner {
+  padding: 5rem 0;
 }
 .carolsBanner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carolsBanner h1 {
+  font-size: 8rem;
+  color: var(--clr-primary);
+  letter-spacing: -0.5rem;
+  text-align: center;
+}
+.carolsBanner h5 {
+  color: var(--clr-secondary);
+  font-style: italic;
+  font-weight: 200;
+  font-size: 2rem;
+  font-family: var(--font--secondary);
+  max-width: 48rem;
+  text-align: center;
+}
+.carolsBanner img {
+  width: 40%;
+  margin-bottom: 5rem;
+}
+.bannerCarols__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bannerCarols h3 {
+  font-size: 5rem;
+  font-family: var(--font--secondary);
+  color: var(--clr-primary);
+  line-height: 5rem;
+  max-width: 50rem;
+  padding: 1.3rem 0;
+}
+.bannerCarols__cards {
+  margin-top: 2rem;
+  padding: 5rem 0;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.cards img {
+  border-bottom: 4px solid var(--clr-secondary);
 }
 
-.carolsBanner__wrapper h1 {
-  font-family: var(--font-primary);
+/* CAROLS MOBILE */
+@media screen and (max-width: 520px) {
+  .carolsBanner {
+    padding: 5rem 0;
+    height: 30rem;
+    margin-bottom: 10rem;
+  }
+  .carolsBanner__wrapper h1 {
+    font-size: 3.8rem;
+    letter-spacing: -0.25rem;
+    margin-top: -5rem;
+  }
+  .carolsBanner__wrapper h5 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .carolsBanner__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carolsBanner__wrapper img {
+    margin-top: 5rem;
+    width: 100rem;
+    display: flex;
+    justify-content: center;
+  }
+  .carols {
+    padding: unset;
+    margin-top: unset;
+  }
+  .bannerCarols__cards {
+    grid-template-columns: 1fr;
+    gap: unset;
+    margin-top: 5rem;
+  }
+}
+
+/* FOODS & DRINKS */
+.foodsanddrinksBanner {
+  padding-top: 0rem;
+  background-color: var(--clr-light);
+  margin-bottom: 10rem;
+}
+.foodsanddrinksBanner__wrapper h1 {
+  font-family: var(--font-secondary);
   color: var(--clr-primary);
   font-size: 8rem;
   text-align: center;
   margin-bottom: 0rem;
 }
-.traditionBanner__wrapper h2 {
+.foodsanddrinksBanner__wrapper h2 {
   font-family: var(--font-secondary);
   color: var(--clr-secondary);
   font-size: 2rem;
@@ -1073,48 +1152,36 @@ img {
   margin-bottom: 5rem;
   font-style: italic;
 }
-.carolsBanner__left {
-  border-right: 1px solid rgba(18, 17, 17, 0.1);
-  padding-right: 5rem;
+.foodsanddrinksBanner__wrapper {
+  max-width: 100rem;
+  color: var(--clr-light);
+  margin: 0 auto;
+  text-align: center;
 }
-.carolsBanner__left small {
-  color: var(--clr-secondary);
-  font-size: 1.4rem;
-  font-weight: 500;
+.foodsanddrinksBanner img {
+  margin: 5rem 0;
+  width: 50%;
 }
-.carolsBanner__left h2 {
-  font-size: 5rem;
-  font-family: var(--font-secondary);
-  color: var(--clr-primary);
-  line-height: 5rem;
-  max-width: 50rem;
-  padding: 1.3rem 0;
+.card__wrapper {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 5rem;
+ margin-bottom: 5rem;
 }
-.carolsBanner__cards {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-.carolsBanner__right {
-  margin-top: 70rem;
-}
-.carolsBanner__right h4 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--clr-primary);
+.cards img {
+  border-bottom: 4px solid var(--clr-secondary);
 }
 
-/* CAROLS BANNER */
-@media screen and (max-width: 520px) {
-  .carolsBanner img {
+/* FOODS & DRINKS - MOBILE */
+@media screen and (max-width:520px) {
+  .foodsanddrinksBanner img {
     margin-top: 10rem;
-    width: 100%;
+    width: 100%
   }
-  .carolsBanner__wrapper h1 {
-    font-size: 4rem;
+  .foodsanddrinksBanner__wrapper h1 {
+  font-size: 4rem;
   }
-  .carolsBanner__wrapper h2 {
+  .foodsanddrinksBanner__wrapper h2 {
     font-size: 2rem;
   }
   .card__wrapper {
@@ -1122,97 +1189,9 @@ img {
     gap: unset;
   }
   .card__wrapper p {
-    margin-bottom: 5rem;
+   margin-bottom: 5rem;
   }
 }
-
-/* FOODS & DRINKS */
-.homeDesign {
-  padding: 5rem;
-  margin-bottom: 10rem;
-}
-.homeDesign__wrapper {
-  background-color: var(--clr-secondary);
-  color: var(--clr-light);
-  height: 68rem;
-  padding: 5rem 7rem;
-  text-align: center;
-  position: relative;
-}
-.homeDesign__detail small {
-  font-size: 1.3rem;
-}
-.homeDesign__detail h2 {
-  font-size: 5rem;
-  font-family: var(--clr-secondary);
-  margin-bottom: 3rem;
-}
-.homeDesign__detail p {
-  max-width: 60rem;
-  margin: 0 auto;
-}
-.homeDesign__img {
-  margin-bottom: 8.1rem;
-}
-.homeDesign__img img:first-child {
-  position: absolute;
-  left: 10rem;
-  top: 7rem;
-  width: 25rem;
-}
-.homeDesign__img img:last-child {
-  position: absolute;
-  right: 10rem;
-  top: 7rem;
-  width: 25rem;
-}
-.homeDesign__content {
-  color: var(--clr-dark);
-  border-top: 4px solid var(--clr-secondary);
-  background-color: var(--clr-light);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  display: flex;
-}
-.homeDesign__card {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  text-align: left;
-  border-right: 1px solid rgba(18, 17, 17, 0.1);
-}
-.homeDesign__card h4 {
-  font-family: var(--clr-secondary);
-  font-size: 2.5rem;
-}
-.homeDesign {
-  margin-bottom: unset;
-}
-
-/* HOME DESIGN MOBILE */
-@media screen and (max-width: 520px) {
-  .homeDesign__img {
-    display: none;
-  }
-  .homeDesign__content {
-    margin-top: 5rem;
-    flex-direction: column;
-    background-color: unset;
-    box-shadow: unset;
-  }
-  .homeDesign__wrapper {
-    height: 100%;
-  }
-  .homeDesign__card {
-    background-color: var(--clr-light);
-    margin-bottom: 2rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-  .homeDesign__detail h2 {
-    font-size: 3rem;
-  }
-}
-
 
 /* REPEATABLE PATTERNS*/
 .btn {
